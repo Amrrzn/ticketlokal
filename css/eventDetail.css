@@ -1,0 +1,215 @@
+/*Event Details*/
+.event-header {
+    text-align: center;
+}
+
+.event-header h1 {
+    font-size: 60px;
+    color: #d5d5d5;
+    margin-bottom: 20px;
+}
+
+.event-header img {
+    width: 700px;
+    max-width: 800px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-details-content p {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.event-details-content a {
+    color: #c70407;
+    text-decoration: none;
+}
+
+.event-details-content a:hover {
+    text-decoration: underline;
+}
+
+.seat-map-container img{
+    width: 600px;
+}
+
+.buy-ticket-button {
+    display: inline-block;
+    background-color: #ff000d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.buy-ticket-button:hover {
+    background-color: #ff1b1b;
+    color: #fff;
+}
+
+.ticket-selection p {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.ticket-container p {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+.ticket-form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ticket-form input,
+.ticket-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ticket-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #d0021b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+/* Footer Styling */
+footer {
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* White text */
+    padding: 30px 20px; /* Padding around the footer */
+    font-size: 14px; /* Default font size */
+    width: 100%;
+    overflow-x: hidden; /* Prevent footer overflow */
+    margin-top: 100px;
+}
+
+footer .main {
+    display: flex; /* Flexbox layout for the footer */
+    justify-content: space-between; /* Space between sections */
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the footer content */
+    box-sizing: border-box; /* Include padding/borders in width */
+    overflow-x: hidden; /* Prevent overflow within content */
+}
+
+/* Left Section - Stacked Links */
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Space between links */
+    align-items: flex-start; /* Align to the left */
+}
+
+.footer-links a {
+    color: #ffffff; /* Light red color for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Slightly larger font size for better readability */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.footer-links a:hover {
+    color: #ff0000; /* Lighter red on hover */
+}
+
+/* Center Section - Logo */
+.footer-logo img {
+    width: 200px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Right Section - Social Media and Copyright */
+.footer-right {
+    text-align: right; /* Align content to the right */
+}
+
+.footer-align p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ccc; /* Subtle gray color for copyright text */
+}
+
+.social-media {
+    display: flex; /* Align icons horizontally */
+    gap: 20px; /* Space between social icons */
+}
+
+.social-media a {
+    color: #fff; /* White icons */
+    font-size: 20px; /* Slightly larger icons */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.social-media a:hover {
+    color: #ff0000; /* Light red hover color */
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer .main {
+        flex-direction: column; /* Stack all sections vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center; /* Center-align links on smaller screens */
+    }
+
+    .footer-right {
+        text-align: center; /* Center-align content on smaller screens */
+    }
+}

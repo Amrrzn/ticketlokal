@@ -1,0 +1,241 @@
+/* Event Section */
+.event-btn{
+    background: rgb(249, 0, 0);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 10px; 
+    padding: 13px 16px; 
+    font-size: 14px; 
+    cursor: pointer
+}
+
+.event-text {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    color: #d5d5d5;
+    font-size: 35px;
+
+}
+
+.event-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.event-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Parent container for all events */
+.event-list {
+    display: flex; /* Enables Flexbox layout */
+    flex-wrap: wrap; /* Makes the layout responsive */
+    gap: 20px; /* Adds space between cards */
+    justify-content: center; /* Centers the cards horizontally */
+    padding: 40px; /* Adds padding around the container */
+}
+
+.event-container {
+    padding: 10px auto;
+    display: flex;
+    flex-direction: column; /* Items inside cards are vertical */
+    align-items: center; /* Centers content horizontally */
+    width: 300px; /* Fixed width for each card */
+    height: auto; /* Dynamic height */
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border: 1px solid #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.event-container a {
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+}
+
+.event-container:hover {
+    transform: translateY(-5px); /* Hover animation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ .event-container img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.event-info .EventName {
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0px 0px 10px 0px;
+}
+
+.event-info .Location {
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+.event-info .Date {
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+.event-info .Price {
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+.event-info .Category {
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+
+.event-info a button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.event-info a button:hover {
+    background-color: #940000;
+}
+
+/* Filter Bar */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff0000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.filter-btn:hover {
+    background-color: #ff1313;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.filter-btn.active {
+    background-color: #ff1b1b; /* Highlight active button */
+    transform: scale(1.2); /* Larger zoom for active category */
+    pointer-events: none; /* Disable clicking the active button */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* White text */
+    padding: 30px 20px; /* Padding around the footer */
+    font-size: 14px; /* Default font size */
+    width: 100%;
+    overflow-x: hidden; /* Prevent footer overflow */
+}
+
+footer .main {
+    display: flex; /* Flexbox layout for the footer */
+    justify-content: space-between; /* Space between sections */
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the footer content */
+    box-sizing: border-box; /* Include padding/borders in width */
+    overflow-x: hidden; /* Prevent overflow within content */
+}
+
+/* Left Section - Stacked Links */
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Space between links */
+    align-items: flex-start; /* Align to the left */
+}
+
+.footer-links a {
+    color: #ffffff; /* Light red color for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Slightly larger font size for better readability */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.footer-links a:hover {
+    color: #ff0000; /* Lighter red on hover */
+}
+
+/* Center Section - Logo */
+.footer-logo img {
+    width: 200px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Right Section - Social Media and Copyright */
+.footer-right {
+    text-align: right; /* Align content to the right */
+}
+
+.footer-align p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ccc; /* Subtle gray color for copyright text */
+}
+
+.social-media {
+    display: flex; /* Align icons horizontally */
+    gap: 20px; /* Space between social icons */
+}
+
+.social-media a {
+    color: #fff; /* White icons */
+    font-size: 20px; /* Slightly larger icons */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.social-media a:hover {
+    color: #ff0000; /* Light red hover color */
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer .main {
+        flex-direction: column; /* Stack all sections vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center; /* Center-align links on smaller screens */
+    }
+
+    .footer-right {
+        text-align: center; /* Center-align content on smaller screens */
+    }
+}

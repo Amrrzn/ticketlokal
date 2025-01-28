@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  float: left;
+  width: 25%;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a.active {
+  background: #d0021b;
+  color: white;
+}
+
+.sidebar ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Main Content Styling */
+.content {
+  float: left;
+  width: 70%;
+  padding-left: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: calc(100% - 10px);
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #d0021b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #a00118;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 100%;
+    padding-left: 0;
+  }
+}

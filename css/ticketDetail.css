@@ -1,0 +1,115 @@
+.ticket-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.ticket-header {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ticket-container img {
+    width: 400px;
+    height: 400px;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.ticket-info {
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.ticket-info span {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #555;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 20px 0;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.info-container div {
+    width: 48%;
+    text-align: left;
+}
+
+.info-container .email {
+    text-align: right;
+    color: #000000;
+}
+
+.terms {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    line-height: 1.8;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.terms h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.terms ul {
+    padding-left: 20px;
+}
+
+.terms ul li {
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff0000;
+}
+
+button[type="button"] {
+    background: #000000;
+}
+
+button[type="button"]:hover {
+    background: #ff1900;
+}
