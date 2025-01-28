@@ -16,14 +16,14 @@ TicketLokal is a web-based system for managing ticket reservations.
 
 To set up the database for this project:
 
-1. **Download the `eventdetail.sql` file**:
+1. **Download the `tiketlokal.sql` file**:
    - The file is located in the root of this repository.
 
 2. **Import the Database**:
    - Open [phpMyAdmin](http://localhost/phpmyadmin) on your local server (e.g., XAMPP).
-   - Create a new database (e.g., `eventdetail`).
+   - Create a new database (e.g., `tiketlokal`).
    - Click the **Import** tab in phpMyAdmin.
-   - Select the `eventdetail.sql` file and click **Go**.
+   - Select the `tiketlokal.sql` file and click **Go**.
 
 3. **Update the Database Connection**:
    - Edit the database connection settings in your `config.php` file:
